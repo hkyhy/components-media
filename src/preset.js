@@ -88,7 +88,7 @@ export const globalInit = async () => {
       'components-iconfont': {
         ...registry,
         remote: 'components-iconfont',
-        defaultVersion: '0.1.8'
+        defaultVersion: '0.1.11'
       },
       'components-media':
         process.env.NODE_ENV === 'development'
@@ -108,8 +108,8 @@ export const globalInit = async () => {
   return {
     ajax,
     themeToken: {
-      colorPrimary: '#4F185A',
-      colorPrimaryHover: '#702280'
+      colorPrimary: '#ff8800',
+      colorPrimaryHover: '#ffaa00'
     }
   };
 };
