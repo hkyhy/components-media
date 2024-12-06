@@ -1,11 +1,11 @@
 {
   "name": "@hkyhy/components-media",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "媒体组件",
   "scripts": {
     "init": "husky",
-    "start": "cross-env PORT=3010 MODULES_DEV_PUBLIC_URL=/components-media craco start",
-    "build": "cross-env COMPONENTS_NAME=components-media MODULES_DEV_PUBLIC_URL=/ craco build",
+    "start": "cross-env PORT=3010 MODULES_DEV_PUBLIC_URL=/ craco start",
+    "build": "cross-env MODULES_DEV_PUBLIC_URL=/components-media craco build",
     "create": "modules-dev-create",
     "test": "craco test --coverage",
     "eject": "react-scripts eject",
