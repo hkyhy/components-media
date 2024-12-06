@@ -22,11 +22,11 @@ jobs:
       - name: Install 🔧
         run: npm install --legacy-peer-deps
 
-      - run: npm publish --access=public
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.HKYHY_PACKAGE_PUBLISH}}
-      - run: npm i -g cnpm
-      - run: npm i -g cnpm && cnpm sync @hkyhy/components-media
+#      - run: npm publish --access=public
+#        env:
+#          NODE_AUTH_TOKEN: ${{secrets.HKYHY_PACKAGE_PUBLISH}}
+#      - run: npm i -g cnpm
+#      - run: npm i -g cnpm && cnpm sync @hkyhy/components-media
 
       - name: Build 🏗️
         run: npm run build
