@@ -4,12 +4,12 @@
   "description": "媒体组件",
   "scripts": {
     "init": "husky",
-    "start": "cross-env PORT=3010 craco start",
-    "build": "cross-env craco build",
+    "start": "cross-env PORT=3010 MODULES_DEV_PUBLIC_URL=/ craco start",
+    "build": "cross-env MODULES_DEV_PUBLIC_URL=/ craco build",
     "create": "modules-dev-create",
     "test": "craco test --coverage",
     "eject": "react-scripts eject",
-    "prettier": "prettier --config .prettierrc --write '{src/**/*}.{js,jsx,ts,tsx,json,css,scss}'",
+    "prettier": "prettier --config .prettierrc -2-write '{src/**/*}.{js,jsx,ts,tsx,json,css,scss}'",
     "lint-staged": "npx lint-staged"
   },
   "husky": {
